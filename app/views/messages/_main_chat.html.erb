@@ -12,36 +12,7 @@
 </div>
 
 <div class="messages">
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        満子様
-      </div>
-      <div class="message-date">
-        マジで恋する5秒前
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        tinpotinpo
-      </div>
-    </div>
-  </div>
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        サモ・ハン・チンポー
-      </div>
-      <div class="message-date">
-        快感の最中
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        manpomanpo
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f| %>
